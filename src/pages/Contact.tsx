@@ -11,6 +11,8 @@ import {
   Megaphone,
   CheckCircle2,
   Send,
+  Building2,
+  MapPin,
 } from "lucide-react";
 
 const reasons = [
@@ -306,6 +308,94 @@ export default function Contact() {
               ))}
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Registered Office */}
+      <section className="py-16 md:py-24 border-b border-sand bg-background">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 md:mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
+              <Building2 className="h-3 w-3" />
+              Registered Office
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-zapier-black leading-[1.05]">
+              Our company,{" "}
+              <span className="text-primary font-editorial italic font-light">
+                on record.
+              </span>
+            </h2>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl"
+          >
+            <div className="p-6 md:p-8 rounded-2xl bg-white border border-sand shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <Building2 className="h-5 w-5" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-warm-gray mb-2">
+                    Legal Entity
+                  </p>
+                  <p className="text-base md:text-lg font-bold text-zapier-black leading-snug mb-1">
+                    Aqirox Technology Private Limited
+                  </p>
+                  <p className="text-sm text-charcoal/70 leading-relaxed">
+                    Operating brand:{" "}
+                    <span className="font-semibold text-zapier-black">AQIROX</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 rounded-2xl bg-white border border-sand shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <MapPin className="h-5 w-5" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-warm-gray mb-2">
+                    Registered Address
+                  </p>
+                  <p className="text-sm md:text-base text-zapier-black leading-relaxed">
+                    Shivje Nagar, Muhisudharpur, Shivpurinewcolony,
+                    <br />
+                    Gorakhpur Sadar, Gorakhpur - 273016,
+                    <br />
+                    Uttar Pradesh, India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8 rounded-2xl bg-white border border-sand shadow-sm md:col-span-2">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <Mail className="h-5 w-5" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-warm-gray mb-2">
+                    Official Email
+                  </p>
+                  <a
+                    href="mailto:aqiroxtechnologies@gmail.com"
+                    className="text-base md:text-lg font-bold text-zapier-black hover:text-primary transition-colors break-all"
+                  >
+                    aqiroxtechnologies@gmail.com
+                  </a>
+                  <p className="text-xs text-charcoal/70 leading-relaxed mt-2">
+                    Use this address for official correspondence, grievance
+                    queries, and verification requests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

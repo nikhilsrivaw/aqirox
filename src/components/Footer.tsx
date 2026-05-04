@@ -1,3 +1,4 @@
+// import { Award } from "lucide-react"; // re-enable when Startup India badge is added
 import { Separator } from "@/components/ui/separator";
 import { Logo } from "./Logo";
 import { Link } from "../lib/router";
@@ -69,19 +70,22 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-base text-sand">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link
+                  to="/privacy-policy"
+                  className="hover:text-white transition-colors"
+                >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/terms" className="hover:text-white transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Refund Policy
-                </a>
+                <Link to="/contact" className="hover:text-white transition-colors">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,9 +93,48 @@ export default function Footer() {
 
         <Separator className="bg-charcoal mb-10" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-warm-gray gap-6">
-          <p>© {new Date().getFullYear()} AQIROX Technologies. All rights reserved.</p>
-          <p className="italic max-w-md text-center md:text-right">
+        {/* Recognition strip — re-enable when Startup India badge is added
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-10 p-5 sm:p-6 rounded-xl bg-white/5 border border-white/10">
+          <div className="w-12 h-12 rounded-lg bg-primary/15 flex items-center justify-center text-primary shrink-0">
+            <Award className="h-6 w-6" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-1">
+              Recognised by
+            </p>
+            <p className="text-sm sm:text-base font-semibold text-cream leading-snug">
+              Startup India · Government of India
+            </p>
+            <p className="text-xs text-warm-gray mt-1">
+              DPIIT Recognition No. DIPP258275 — Aqirox Technology Private
+              Limited
+            </p>
+          </div>
+        </div>
+        */}
+
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 text-sm text-warm-gray">
+          <div className="space-y-2 max-w-sm">
+            <p className="text-cream font-semibold">
+              Aqirox Technology Private Limited
+            </p>
+            <p className="leading-relaxed">
+              Shivje Nagar, Muhisudharpur, Shivpurinewcolony, Gorakhpur Sadar,
+              Gorakhpur - 273016, Uttar Pradesh, India
+            </p>
+            <p>
+              <a
+                href="mailto:aqiroxtechnologies@gmail.com"
+                className="hover:text-white transition-colors break-all"
+              >
+                aqiroxtechnologies@gmail.com
+              </a>
+            </p>
+            <p className="pt-2">
+              © 2025 Aqirox Technology Private Limited. All rights reserved.
+            </p>
+          </div>
+          <p className="italic max-w-md md:text-right">
             AQIROX is not just building software. We are building systems that support
             businesses in doing what they do best.
           </p>

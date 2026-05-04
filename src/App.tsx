@@ -13,6 +13,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 
 function NotFound() {
   return (
@@ -50,6 +52,10 @@ function Pages() {
       return <Careers />;
     case "/contact":
       return <Contact />;
+    case "/privacy-policy":
+      return <PrivacyPolicy />;
+    case "/terms":
+      return <Terms />;
     default:
       return <NotFound />;
   }

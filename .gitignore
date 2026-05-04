@@ -17,3 +17,6 @@ Thumbs.db
 
 # Claude Code scratch
 .claude/
+
+# Private legal / corporate documents (do NOT commit to public repo)
+certificate/

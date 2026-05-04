@@ -11,6 +11,7 @@ import {
   Target,
   Flag,
   Layers,
+  // Award, // re-enable when Startup India badge is added
 } from "lucide-react";
 import { Link } from "../lib/router";
 
@@ -194,6 +195,44 @@ export default function About() {
         </div>
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-light-sand/30 to-transparent -skew-x-12 translate-x-1/4" />
       </section>
+
+      {/* Recognition strip — re-enable when Startup India badge is added
+      <section className="py-10 md:py-14 border-b border-sand bg-background">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-8 p-6 md:p-8 rounded-2xl border border-sand bg-light-sand/40"
+          >
+            <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <Award className="h-7 w-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
+                Recognised by
+              </p>
+              <p className="text-lg sm:text-xl font-bold text-zapier-black leading-snug">
+                Startup India · Government of India
+              </p>
+              <p className="text-sm text-charcoal/70 mt-1 leading-relaxed">
+                Aqirox Technology Private Limited is a DPIIT-recognised startup
+                under the Department for Promotion of Industry and Internal
+                Trade.
+              </p>
+            </div>
+            <div className="sm:text-right shrink-0">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-warm-gray mb-1">
+                Recognition No.
+              </p>
+              <p className="text-base font-bold text-zapier-black tracking-wider">
+                DIPP258275
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+      */}
 
       {/* Our Name */}
       <section className="py-20 md:py-32 border-b border-sand bg-zapier-black text-cream relative overflow-hidden">
