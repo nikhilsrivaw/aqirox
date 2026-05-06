@@ -6,9 +6,8 @@ import {
   Sparkles,
   Mail,
   LifeBuoy,
-  Handshake,
-  Briefcase,
-  Megaphone,
+  User,
+  Users,
   CheckCircle2,
   Send,
   Building2,
@@ -26,9 +25,9 @@ const reasons = [
 const contactChannels = [
   {
     icon: Mail,
-    label: "General enquiries",
+    label: "General · Hiring · Partnerships · Press",
     email: "hello@aqirox.com",
-    note: "We read every message.",
+    note: "Our default channel. We read every message.",
   },
   {
     icon: LifeBuoy,
@@ -37,22 +36,16 @@ const contactChannels = [
     note: "For KROVA and GYMNSETU users. Typical response time: 4 business hours.",
   },
   {
-    icon: Handshake,
-    label: "Partnerships",
-    email: "partnerships@aqirox.com",
-    note: "For business proposals and collaborations.",
+    icon: User,
+    label: "Founder · Nikhil Srivastava",
+    email: "nikhilsrivastava@aqirox.com",
+    note: "Direct line to the founder.",
   },
   {
-    icon: Briefcase,
-    label: "Careers",
-    email: "careers@aqirox.com",
-    note: "Include your portfolio and a short note.",
-  },
-  {
-    icon: Megaphone,
-    label: "Press and media",
-    email: "press@aqirox.com",
-    note: "For interviews, features, and coverage.",
+    icon: Users,
+    label: "Co-founder · Sameer Gautam",
+    email: "sameergautam@aqirox.com",
+    note: "Direct line to the co-founder.",
   },
 ];
 

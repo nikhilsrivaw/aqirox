@@ -152,7 +152,7 @@ export default function Careers() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <a href="mailto:careers@aqirox.com">
+            <a href="mailto:hello@aqirox.com">
               <Button
                 variant="outline"
                 className="border-zapier-black text-zapier-black hover:bg-sand/20 rounded-sm px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold h-auto transition-all"
@@ -310,7 +310,7 @@ export default function Careers() {
                         <span>{role.location}</span>
                       </div>
                     </div>
-                    <a href="mailto:careers@aqirox.com">
+                    <a href="mailto:hello@aqirox.com">
                       <Button className="w-full bg-zapier-black hover:bg-primary text-white rounded-sm px-6 py-5 text-sm font-bold uppercase tracking-wider h-auto group/btn transition-all">
                         Apply
                         <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -339,10 +339,10 @@ export default function Careers() {
                     listed role that matches.
                   </p>
                 </div>
-                <a href="mailto:careers@aqirox.com" className="shrink-0">
+                <a href="mailto:hello@aqirox.com" className="shrink-0">
                   <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-6 sm:px-8 py-5 text-xs sm:text-sm font-bold uppercase tracking-wider h-auto">
                     <Mail className="mr-2 h-4 w-4" />
-                    careers@aqirox.com
+                    hello@aqirox.com
                   </Button>
                 </a>
               </div>
@@ -432,10 +432,10 @@ export default function Careers() {
                 what you are capable of. Include a short note about what excites you
                 about AQIROX. We read every application and respond to every one.
               </p>
-              <a href="mailto:careers@aqirox.com">
+              <a href="mailto:hello@aqirox.com">
                 <Button className="bg-primary hover:bg-primary/90 text-white rounded-sm px-6 sm:px-10 py-5 sm:py-7 text-sm sm:text-lg font-semibold h-auto group shadow-lg shadow-primary/20 whitespace-normal">
                   <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
-                  <span className="break-all">careers@aqirox.com</span>
+                  <span className="break-all">hello@aqirox.com</span>
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
